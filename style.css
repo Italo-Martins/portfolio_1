@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(90deg, #193541, #234550, #2C5364)
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px 1px #FFF;
+    margin-bottom: 50px;
+}
+
+img {
+    max-width:125px;
+    max-height:75px;
+    width: auto;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+
+}
+header ul li {
+    padding: 10px;
+}
+
+header ul li a:hover {
+    color: rgb(177, 177, 177);
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 50px;
+}
+
+.container .name h5{
+    font-size: 25px;
+}
+
+
+#arrow {
+    font-size: 40px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+    
+}
+
+.active {
+    display: block !important;
+}
+
+#anime {
+    transition: 350ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 350ms;
+}
+
+#about  table {
+    width: 850px;
+    margin: 0 auto;
+
+}
+
+#about  .Conhecimentos {
+    text-align: left;
+    font-size: 20px;
+}
+
+#My_photo{
+    position:relative;
+    left:-18%;
+    max-width:290px;
+    max-height:220px;
+    width: auto;
+    height: auto;
+    
+}
+
+#about ul{
+    list-style: inside;
+}
+
+#about .top{
+    font-size: 25px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+    font-weight: bold;
+    color: #9bffa7b6;;
+    border-bottom: 5px solid #2f995073;
+    padding: 10px 0 10px 0;
+
+}
+
+#about p{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 0 10px;
+}
+
+#about #exp-for{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    padding: 10px 0 10px 0;
+}
+
+#about #proj{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    text-decoration: underline;
+    padding: 10px 0 10px 0;
+}
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 40%;
+    padding: 5px 10px;
+    border: none;
+}
+
+.form button{
+    color: #FFF;
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.form button:hover{
+    background-position: left bottom;
+}
+
+@media only screen and (max-width: 790px){
+    .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container .name h5{
+        font-size: 30px;
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
