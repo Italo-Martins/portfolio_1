@@ -93,14 +93,24 @@ header ul li a:hover {
 
 }
 
-#about  .Conhecimentos {
+.tabela thead{
+    display: none;
+}
+
+.tabela tr{
+    display: block;
     text-align: left;
     font-size: 20px;
 }
 
+.tabela td{
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+}
+
 #My_photo{
     position:relative;
-    left:-18%;
     max-width:290px;
     max-height:220px;
     width: auto;
@@ -146,47 +156,74 @@ header ul li a:hover {
     padding: 10px 0 10px 0;
 }
 
-.form {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 30px;
-}
 
-.form input{
-    width: 40%;
-    padding: 5px 10px;
-    border: none;
-}
+@media only screen and (max-width: 850px){
 
-.form button{
-    color: #FFF;
-    width: 15%;
-    padding: 5px 10px;
-    background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: none;
-    cursor: pointer;
-    transition: all 300ms ease-out;
-}
-
-.form button:hover{
-    background-position: left bottom;
-}
-
-@media only screen and (max-width: 790px){
-    .form{
+    #about  table {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 480px){
-    .container .name h5{
-        font-size: 30px;
+        margin: 0 auto;
+        padding: 20px;
     }
 
+    .tabela thead{
+        display: none;
+    }
+    
+    .tabela tr{
+        display: block;
+    }
+    
+    .tabela td {
+        text-align: left;
+        font-size: 20px;
+        display:block;
+        padding: 0;
+    }
+
+    #My_photo{
+        position:center;
+        max-width:290px;
+        max-height:220px;
+        width: auto;
+        height: auto;
+        
+    }
+
+    #about ul{
+        list-style: inside;
+    }
+
+    #about .top{
+        font-size: 25px;
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: left;
+        font-weight: bold;
+        color: #9bffa7b6;;
+        border-bottom: 5px solid #2f995073;
+        padding: 10px;
+    
+    }
+    
     #about p{
-        max-width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
         text-align: justify;
+        padding: 10px;
+    }
+    
+    #about #exp-for{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    #about #proj{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: justify;
+        text-decoration: underline;
+        padding: 10px;
     }
 }
